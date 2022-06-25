@@ -58,12 +58,71 @@ data:extend({
         order = "ca"
     },
     {
+        type = "bool-setting",
+        name = "spidertron-engineer-enable-upgrade-size-with-scale",
+        setting_type = "startup",
+        default_value = "true",
+        order = "cb"
+    },
+    {
         type = "double-setting",
         name = "spidertron-engineer-constant-size-scale",
         setting_type = "startup",
         default_value = 1,
         minimum_value = 0.2,
-        maximum_value = 8,
-        order = "cb"
+        maximum_value = 99,
+        order = "cd"
+    },
+    {
+        type = "bool-setting",
+        name = "custom-grid-size",
+        setting_type = "startup",
+        default_value = "true",
+        order = "ca"
+    },
+    {
+        type = "int-setting",
+        name = "spidertron-grid-6",
+        setting_type = "startup",
+        default_value = 20,
+        minimum_value = 20,
+        maximum_value = 100,
+        order = "dc"
+    },
+    {
+        type = "int-setting",
+        name = "spidertron-grid-5",
+        setting_type = "startup",
+        default_value = 14,
+        minimum_value = 14,
+        maximum_value = 100,
+        order = "dd"
+    },
+	    {
+        type = "int-setting",
+        name = "spidertron-grid-4",
+        setting_type = "startup",
+        default_value = 12,
+        minimum_value = 12,
+        maximum_value = 100,
+        order = "de"
+    },
+	    {
+        type = "int-setting",
+        name = "spidertron-grid-3",
+        setting_type = "startup",
+        default_value = 10,
+        minimum_value = 10,
+        maximum_value = 100,
+        order = "df"
+    },
+	    {
+        type = "int-setting",
+        name = "spidertron-grid-2",
+        setting_type = "startup",
+        default_value = 7,
+        minimum_value = 7,
+        maximum_value = 100,
+        order = "dg"
     }
 })

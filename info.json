@@ -1,9 +1,9 @@
 {
-    "name": "SpidertronEngineer",
-    "version": "1.8.10",
-    "title": "Spidertron Engineer",
-    "author": "Xorimuth",
-    "description": "Build your factory as a Spidertron from the start! Instead of unlocking better weapons and armor, unlock upgrades to yourself.",
+    "name": "SpidertronEngineer2",
+    "version": "0.1.1",
+    "title": "Spidertron Engineer (BIG Edition)",
+    "author": "iHouqLF & Kermit",
+    "description": "a fork for Spidertron Engineer",
     "factorio_version": "1.1",
-    "dependencies": ["base >= 1.1.6", "SpidertronEnhancements >= 1.4.0"]
+    "dependencies": ["base >= 1.1.6", "SpidertronEnhancements >= 1.4.0", "! SpidertronEngineer"]
   }
