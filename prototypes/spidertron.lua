@@ -252,8 +252,8 @@ spiderneer9.resistances =  {
 }
 
 -- Created so that there is always a spidertron that can be switched to
-local spiderneer5a = table.deepcopy(spiderneer5)
-spiderneer5a.name = "spidertron-engineer-5a"
+local spiderneer9a = table.deepcopy(spiderneer9)
+spiderneer9a.name = "spidertron-engineer-9a"
 
 
 -- Nano emitters cannot actually be used though
@@ -267,10 +267,10 @@ if mods["Nanobots"] then
   table.insert(spiderneer7.guns, "gun-nano-emitter")
   table.insert(spiderneer8.guns, "gun-nano-emitter")
   table.insert(spiderneer9.guns, "gun-nano-emitter")
-  table.insert(spiderneer5a.guns, "gun-nano-emitter")
+  table.insert(spiderneer9a.guns, "gun-nano-emitter")
 end
 
-data:extend{spiderneer0, spiderneer1, spiderneer2, spiderneer3, spiderneer4, spiderneer5, spiderneer6, spiderneer7, spiderneer8, spiderneer9, spiderneer5a}
+data:extend{spiderneer0, spiderneer1, spiderneer2, spiderneer3, spiderneer4, spiderneer5, spiderneer6, spiderneer7, spiderneer8, spiderneer9, spiderneer9a}
 
 legs = {generate_legs(spiderneer0, "0"),
         generate_legs(spiderneer1, "1"),
@@ -282,7 +282,7 @@ legs = {generate_legs(spiderneer0, "0"),
 		generate_legs(spiderneer7, "7"),
 		generate_legs(spiderneer8, "8"),
 		generate_legs(spiderneer9, "9"),
-        generate_legs(spiderneer5a, "5a")
+        generate_legs(spiderneer9a, "9a")
       }
 for i, leg in pairs(legs) do
   data:extend(legs[i])
@@ -300,7 +300,7 @@ if settings.startup["spidertron-engineer-enable-upgrade-size"].value then
 	spidertron_scale{spidertron = spiderneer7, scale = scale * 1.7}
 	spidertron_scale{spidertron = spiderneer8, scale = scale * 2.0}
 	spidertron_scale{spidertron = spiderneer9, scale = scale * 2.8}
-    spidertron_scale{spidertron = spiderneer5a, scale = scale * 1.2}
+    spidertron_scale{spidertron = spiderneer9a, scale = scale * 2.8}
   else
     spidertron_scale{spidertron = spiderneer0, scale = 0.6}
     spidertron_scale{spidertron = spiderneer1, scale = 0.7}
@@ -311,7 +311,7 @@ if settings.startup["spidertron-engineer-enable-upgrade-size"].value then
 	spidertron_scale{spidertron = spiderneer7, scale = 1.7}
 	spidertron_scale{spidertron = spiderneer8, scale = 2.0}
 	spidertron_scale{spidertron = spiderneer9, scale = 2.8}
-    spidertron_scale{spidertron = spiderneer5a, scale = 1.2}
+    spidertron_scale{spidertron = spiderneer9a, scale = 2.8}
   end
 else
   scale = settings.startup["spidertron-engineer-constant-size-scale"].value
@@ -324,7 +324,7 @@ else
   spidertron_scale{spidertron = spiderneer7, scale = scale}
   spidertron_scale{spidertron = spiderneer8, scale = scale}
   spidertron_scale{spidertron = spiderneer9, scale = scale}
-  spidertron_scale{spidertron = spiderneer5a, scale = scale}
+  spidertron_scale{spidertron = spiderneer9a, scale = scale}
 end
 -- Create lots of items to allow displaying them in the technology tree
 local spiderneer_item = table.deepcopy(data.raw["item-with-entity-data"]["spidertron"])
@@ -339,7 +339,7 @@ spiderneer_item6 = table.deepcopy(spiderneer_item)
 spiderneer_item7 = table.deepcopy(spiderneer_item)
 spiderneer_item8 = table.deepcopy(spiderneer_item)
 spiderneer_item9 = table.deepcopy(spiderneer_item)
-spiderneer_item5a = table.deepcopy(spiderneer_item)
+spiderneer_item9a = table.deepcopy(spiderneer_item)
 spiderneer_item0.name = "spidertron-engineer-0"
 spiderneer_item1.name = "spidertron-engineer-1"
 spiderneer_item2.name = "spidertron-engineer-2"
@@ -350,7 +350,7 @@ spiderneer_item6.name = "spidertron-engineer-6"
 spiderneer_item7.name = "spidertron-engineer-7"
 spiderneer_item8.name = "spidertron-engineer-8"
 spiderneer_item9.name = "spidertron-engineer-9"
-spiderneer_item5a.name = "spidertron-engineer-5a"
+spiderneer_item9a.name = "spidertron-engineer-9a"
 spiderneer_item0.place_result = "spidertron-engineer-0"
 spiderneer_item1.place_result = "spidertron-engineer-1"
 spiderneer_item2.place_result = "spidertron-engineer-2"
@@ -361,6 +361,6 @@ spiderneer_item6.place_result = "spidertron-engineer-6"
 spiderneer_item7.place_result = "spidertron-engineer-7"
 spiderneer_item8.place_result = "spidertron-engineer-8"
 spiderneer_item9.place_result = "spidertron-engineer-9"
-spiderneer_item5a.place_result = "spidertron-engineer-5a"
+spiderneer_item9a.place_result = "spidertron-engineer-9a"
 
-data:extend{spiderneer_item0, spiderneer_item1, spiderneer_item2, spiderneer_item3, spiderneer_item4, spiderneer_item5, spiderneer_item6, spiderneer_item7, spiderneer_item8, spiderneer_item9, spiderneer_item5a}
+data:extend{spiderneer_item0, spiderneer_item1, spiderneer_item2, spiderneer_item3, spiderneer_item4, spiderneer_item5, spiderneer_item6, spiderneer_item7, spiderneer_item8, spiderneer_item9, spiderneer_item9a}

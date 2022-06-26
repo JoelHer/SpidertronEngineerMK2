@@ -5,7 +5,7 @@ require("utils.get-banned-items")
 spidertron_lib = require("utils.spidertron_lib")
 
 spidertron_researches = {"military", "military-2", "power-armor", "power-armor-mk2", "spidertron", "spidertron-mk7", "spidertron-mk8", "spidertron-mk9", "spidertron-mk10"}
-spidertron_names = {"spidertron-engineer-0", "spidertron-engineer-1", "spidertron-engineer-2", "spidertron-engineer-3", "spidertron-engineer-4", "spidertron-engineer-5", "spidertron-engineer-6"}
+spidertron_names = {"spidertron-engineer-0", "spidertron-engineer-1", "spidertron-engineer-2", "spidertron-engineer-3", "spidertron-engineer-4", "spidertron-engineer-5", "spidertron-engineer-6", "spidertron-engineer-7", "spidertron-engineer-8", "spidertron-engineer-9"}
 train_names = {"locomotive", "cargo-wagon", "fluid-wagon", "artillery-wagon"}
 drivable_names = {"locomotive", "cargo-wagon", "fluid-wagon", "artillery-wagon", "car", "spider-vehicle"}
 
@@ -563,7 +563,7 @@ local function config_changed_setup(changed_data)
     -- Replace spidertron in case its size was changed
     for _, player in pairs(game.players) do
       if contains(spidertron_names, player.vehicle) then
-        replace_spidertron(player, "spidertron-engineer-5a")  -- Can't directly fast-replace the same entity so use the 5a dummy
+        replace_spidertron(player, "spidertron-engineer-9a")  -- Can't directly fast-replace the same entity so use the 9a dummy
         local spidertron = replace_spidertron(player)
         spidertron.color = player.color
         global.spidertrons[player.index] = spidertron

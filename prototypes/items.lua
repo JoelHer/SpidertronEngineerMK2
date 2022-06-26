@@ -13,6 +13,7 @@ data:extend({
 data:extend({
 	{
 		type = "recipe",
+		enabled = false,
 		name = "purple-circuit",
 		category = "crafting",
 		group = "intermediate-products",
@@ -40,6 +41,7 @@ data:extend({
 data:extend({
 	{
 		type = "recipe",
+		enabled = false,
 		name = "spidertron-science-pack",
 		category = "crafting",
 		group = "intermediate-products",

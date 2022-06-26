@@ -82,7 +82,11 @@ data:extend({
     {
       type = "give-item",
       item = "spidertron-engineer-7"
-    }
+    },
+	{
+	  type = "unlock-recipe",
+	  recipe = "purple-circuit"
+	}
   },
   unit =
   {
@@ -128,7 +132,7 @@ data:extend({
           },
       time = 15
     },
-    order = "c-a"
+    order = "c-d"
   }
 })
 add_prerequisites("spidertron-science", {"spidertron-mk8"})
@@ -161,7 +165,7 @@ data:extend({
 		},
     time = 30
   },
-  order = "c-d"
+  order = "c-e"
   }
 })
 add_prerequisites("spidertron-mk9", {"spidertron-science"})
@@ -195,7 +199,7 @@ data:extend({
 		},
     time = 30
   },
-  order = "c-e"
+  order = "c-f"
   }
 })
 add_prerequisites("spidertron-mk10", {"spidertron-mk9"})
