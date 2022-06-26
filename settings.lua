@@ -82,21 +82,21 @@ data:extend({
     },
     {
         type = "int-setting",
-        name = "spidertron-grid-6",
+        name = "spidertron-grid-2",
         setting_type = "startup",
-        default_value = 20,
-        minimum_value = 20,
+        default_value = 7,
+        minimum_value = 7,
         maximum_value = 100,
-        order = "dc"
+        order = "da"
     },
     {
         type = "int-setting",
-        name = "spidertron-grid-5",
+        name = "spidertron-grid-3",
         setting_type = "startup",
-        default_value = 14,
-        minimum_value = 14,
+        default_value = 10,
+        minimum_value = 10,
         maximum_value = 100,
-        order = "dd"
+        order = "db"
     },
 	    {
         type = "int-setting",
@@ -105,24 +105,51 @@ data:extend({
         default_value = 12,
         minimum_value = 12,
         maximum_value = 100,
-        order = "de"
+        order = "dc"
     },
 	    {
         type = "int-setting",
-        name = "spidertron-grid-3",
+        name = "spidertron-grid-5",
         setting_type = "startup",
-        default_value = 10,
-        minimum_value = 10,
+        default_value = 14,
+        minimum_value = 14,
         maximum_value = 100,
-        order = "df"
+        order = "ea"
     },
 	    {
         type = "int-setting",
-        name = "spidertron-grid-2",
+        name = "spidertron-grid-6",
         setting_type = "startup",
-        default_value = 7,
-        minimum_value = 7,
+        default_value = 18,
+        minimum_value = 18,
         maximum_value = 100,
-        order = "dg"
-    }
+        order = "eb"
+    },
+	{
+        type = "int-setting",
+        name = "spidertron-grid-7",
+        setting_type = "startup",
+        default_value = 20,
+        minimum_value = 20,
+        maximum_value = 100,
+        order = "ec"
+    },
+	{
+        type = "int-setting",
+        name = "spidertron-grid-8",
+        setting_type = "startup",
+        default_value = 30,
+        minimum_value = 30,
+        maximum_value = 100,
+        order = "ed"
+    },
+	{
+        type = "int-setting",
+        name = "spidertron-grid-9",
+        setting_type = "startup",
+        default_value = 50,
+        minimum_value = 50,
+        maximum_value = 200,
+        order = "ee"
+    },
 })

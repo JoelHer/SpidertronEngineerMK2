@@ -4,7 +4,7 @@ require("utils.table-utils")
 require("utils.get-banned-items")
 spidertron_lib = require("utils.spidertron_lib")
 
-spidertron_researches = {"military", "military-2", "power-armor", "power-armor-mk2", "spidertron", "spidertron-mk7"}
+spidertron_researches = {"military", "military-2", "power-armor", "power-armor-mk2", "spidertron", "spidertron-mk7", "spidertron-mk8", "spidertron-mk9", "spidertron-mk10"}
 spidertron_names = {"spidertron-engineer-0", "spidertron-engineer-1", "spidertron-engineer-2", "spidertron-engineer-3", "spidertron-engineer-4", "spidertron-engineer-5", "spidertron-engineer-6"}
 train_names = {"locomotive", "cargo-wagon", "fluid-wagon", "artillery-wagon"}
 drivable_names = {"locomotive", "cargo-wagon", "fluid-wagon", "artillery-wagon", "car", "spider-vehicle"}
@@ -26,7 +26,10 @@ local spidertron_filters = {
    {filter = "name", name = "spidertron-engineer-3"},
    {filter = "name", name = "spidertron-engineer-4"},
    {filter = "name", name = "spidertron-engineer-5"},
-   {filter = "name", name = "spidertron-engineer-6"}
+   {filter = "name", name = "spidertron-engineer-6"},
+   {filter = "name", name = "spidertron-engineer-7"},
+   {filter = "name", name = "spidertron-engineer-8"},
+   {filter = "name", name = "spidertron-engineer-9"}
 }
 
 --[[
@@ -35,7 +38,10 @@ local spidertron_filters = {
 /c game.player.force.technologies['power-armor'].researched=true
 /c game.player.force.technologies['power-armor-mk2'].researched=true
 /c game.player.force.technologies['spidertron'].researched=true
-/c game.player.force.technologies['spidertron-mk'].researched=true
+/c game.player.force.technologies['spidertron-mk7'].researched=true
+/c game.player.force.technologies['spidertron-mk8'].researched=true
+/c game.player.force.technologies['spidertron-mk9'].researched=true
+/c game.player.force.technologies['spidertron-mk10'].researched=true
 ]]
 
 -- Spidertron heal
@@ -290,6 +296,9 @@ local function upgrade_spidertrons(force)
         removed_items = removed_items + player.remove_item({name="spidertron-engineer-4"})
         removed_items = removed_items + player.remove_item({name="spidertron-engineer-5"})
 		removed_items = removed_items + player.remove_item({name="spidertron-engineer-6"})
+		removed_items = removed_items + player.remove_item({name="spidertron-engineer-7"})
+		removed_items = removed_items + player.remove_item({name="spidertron-engineer-8"})
+		removed_items = removed_items + player.remove_item({name="spidertron-engineer-9"})
       end
     end
   end
