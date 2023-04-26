@@ -5,5 +5,5 @@
   "author": "EmperorKermit & iHouqLF",
   "description": "A forked version of Spidertron Engineer (by Xorimuth).\nThe added features are:\n -4 Plus tiers\n -Spidertron Science Pack\n -Grand Motherboard\n -Customizable Spidertron Engineer size\n -Customizable Spidertron Engineer grid size",
   "factorio_version": "1.1",
-  "dependencies": ["base >= 1.1.6", "SpidertronEnhancements >= 1.4.0", "! SpidertronEngineer"]
+  "dependencies": ["base >= 1.1.7", "SpidertronEnhancements >= 1.4.0", "! SpidertronEngineer"]
 }
