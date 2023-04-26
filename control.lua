@@ -4,10 +4,11 @@ require("utils.table-utils")
 require("utils.get-banned-items")
 spidertron_lib = require("utils.spidertron_lib")
 
-spidertron_researches = {"military", "military-2", "power-armor", "power-armor-mk2", "spidertron"}
-spidertron_names = {"spidertron-engineer-0", "spidertron-engineer-1", "spidertron-engineer-2", "spidertron-engineer-3", "spidertron-engineer-4", "spidertron-engineer-5"}
+spidertron_researches = {"military", "military-2", "power-armor", "power-armor-mk2", "spidertron", "spidertron-mk7", "spidertron-mk8", "spidertron-mk9", "spidertron-mk10"}
+spidertron_names = {"spidertron-engineer-0", "spidertron-engineer-1", "spidertron-engineer-2", "spidertron-engineer-3", "spidertron-engineer-4", "spidertron-engineer-5", "spidertron-engineer-6", "spidertron-engineer-7", "spidertron-engineer-8", "spidertron-engineer-9"}
 train_names = {"locomotive", "cargo-wagon", "fluid-wagon", "artillery-wagon"}
 drivable_names = {"locomotive", "cargo-wagon", "fluid-wagon", "artillery-wagon", "car", "spider-vehicle"}
+
 
 -- We only search for weapons, armor and spidertron items, so don't need ammo etc inventories
 inventory_types = {"cargo-wagon", "container", "car", "character", "logistic-container", "spider-vehicle"}
@@ -24,7 +25,11 @@ local spidertron_filters = {
    {filter = "name", name = "spidertron-engineer-2"},
    {filter = "name", name = "spidertron-engineer-3"},
    {filter = "name", name = "spidertron-engineer-4"},
-   {filter = "name", name = "spidertron-engineer-5"}
+   {filter = "name", name = "spidertron-engineer-5"},
+   {filter = "name", name = "spidertron-engineer-6"},
+   {filter = "name", name = "spidertron-engineer-7"},
+   {filter = "name", name = "spidertron-engineer-8"},
+   {filter = "name", name = "spidertron-engineer-9"}
 }
 
 --[[
@@ -33,6 +38,10 @@ local spidertron_filters = {
 /c game.player.force.technologies['power-armor'].researched=true
 /c game.player.force.technologies['power-armor-mk2'].researched=true
 /c game.player.force.technologies['spidertron'].researched=true
+/c game.player.force.technologies['spidertron-mk7'].researched=true
+/c game.player.force.technologies['spidertron-mk8'].researched=true
+/c game.player.force.technologies['spidertron-mk9'].researched=true
+/c game.player.force.technologies['spidertron-mk10'].researched=true
 ]]
 
 -- Spidertron heal
@@ -286,6 +295,10 @@ local function upgrade_spidertrons(force)
         removed_items = removed_items + player.remove_item({name="spidertron-engineer-3"})
         removed_items = removed_items + player.remove_item({name="spidertron-engineer-4"})
         removed_items = removed_items + player.remove_item({name="spidertron-engineer-5"})
+		removed_items = removed_items + player.remove_item({name="spidertron-engineer-6"})
+		removed_items = removed_items + player.remove_item({name="spidertron-engineer-7"})
+		removed_items = removed_items + player.remove_item({name="spidertron-engineer-8"})
+		removed_items = removed_items + player.remove_item({name="spidertron-engineer-9"})
       end
     end
   end
@@ -361,7 +374,7 @@ script.on_event(defines.events.on_player_driving_changed_state,
       if (not player.driving) and spidertron and allowed_into_entities ~= "none" and event.entity and contains(spidertron_names, event.entity.name) then
         -- See if there is a valid entity nearby that we can enter
         log("Searching for nearby entities to enter")
-        for radius=1,5 do
+        for radius=1,6 do
           local nearby_entities
           if allowed_into_entities == "limited" then
             nearby_entities = player.surface.find_entities_filtered{position=spidertron.position, radius=radius, type=train_names}
@@ -550,7 +563,7 @@ local function config_changed_setup(changed_data)
     -- Replace spidertron in case its size was changed
     for _, player in pairs(game.players) do
       if contains(spidertron_names, player.vehicle) then
-        replace_spidertron(player, "spidertron-engineer-5a")  -- Can't directly fast-replace the same entity so use the 5a dummy
+        replace_spidertron(player, "spidertron-engineer-9a")  -- Can't directly fast-replace the same entity so use the 9a dummy
         local spidertron = replace_spidertron(player)
         spidertron.color = player.color
         global.spidertrons[player.index] = spidertron
