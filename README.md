@@ -64,4 +64,4 @@ Other mods EmperorKermit and I made:
 - [Über Drill](https://mods.factorio.com/mod/UberDrill/) This mod adds a mining drill that can be placed anywhere for infinite resources, however it needs a very strong acid to mine this deep and it will require coolant if Space Exploration is present. 
 
 Other mods the original mod author (Xorimuth) made:
-- Check out my other mods: [Spidertron Waypoints](https://mods.factorio.com/mod/SpidertronWaypoints) and [Spidertron Weapon Switcher](https://mods.factorio.com/mod/SpidertronWeaponSwitcher)
+- Check out other mods by Xorimuth: [Spidertron Waypoints](https://mods.factorio.com/mod/SpidertronWaypoints) and [Spidertron Weapon Switcher](https://mods.factorio.com/mod/SpidertronWeaponSwitcher)
