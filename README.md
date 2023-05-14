@@ -1,14 +1,16 @@
-Spidertron Engineer
+Spidertron Engineer MK2 (BIG Edition)
 ==================
 
 Are you tired of walking around on only 2 legs? Now you can live your whole life as a hulking 8-legged spider mech!
 
-You can see Xterminator's Mod Spotlight here:
+This is a forked version of Spidertron Engineer (by Xorimuth), which adds bigger spidertrons that can be unlocked through upgrades.
+A major change is the custom science pack and the grand mother board. The grand motherboard is purple, and its used to make the custom science pack, which is very expensive. (Have fun automating spidertron prioduction) 
 
+You can see Xterminator's Mod Spotlight here for the original version of the mod:
 [![Xterminator Mod Spotlight](https://img.youtube.com/vi/7VceSqA29QY/0.jpg)](https://www.youtube.com/watch?v=7VceSqA29QY)
 
 -----
-Major Features
+Major Features (Original mod)
 -----
 
 - Spawn from the start as a Spidertron (with no way to exit it!*)
@@ -25,7 +27,15 @@ Major Features
 *There is a setting that allows you to exit the Spidertron. This allows some features from other mods to work, such as entering a factory in [Factorissimo2](https://mods.factorio.com/mod/Factorissimo2)
 
 -----
-Other Info
+This fork adds
+-----
+
+- A custom Science pack and the grand mother board (purple cicuit board)
+- The grand motherboard is used to make the custom science pack
+- Have fun automating spidertrons for the science pack lmao
+
+-----
+Other Info (Original mod)
 -----
 
 - Supports multiplayer, including different forces/factions
@@ -36,26 +46,22 @@ Other Info
 - Player reach increased by 3 tiles to compensate for the fiddly movement of the spidertron
 
 -----
-Limitations
+Limitations (Original mod)
 -----
 
 - Personal roboports can only work with robots and items in the Spidertron trunk
-
------
-Future Updates?
------
-
-- Tested and balanced mod compatibility, in particular: [Krastorio2](https://mods.factorio.com/mod/Krastorio2), [Bob's Vehicle Equipment](https://mods.factorio.com/mod/bobvehicleequipment), [Spidertron Extended](https://mods.factorio.com/mod/spidertron-extended)
-- Help needed: because I've never played any overhaul mods, it will be tricky for me to balance this mod to work with them. I'd appreciate suggestions about which technology researches to place upgrades at and which weapons/stats to have at each upgrade. I can happily go beyond the current 6 tiers if needed
-- Better handling of player inventory vs spidertron inventory; see [this discussion](https://mods.factorio.com/mod/SpidertronEngineer/discussion/5f396ef22e266cbb298ccc2d). I'm waiting on Factorio 1.1, which will include a Spidertron logistics tab, before improving this further - it is heavily restricted by the mod API
 
 -----
 Translation
 -----
 
 - You can help by translating this mod into your language using [CrowdIn](https://crowdin.com/project/factorio-mods-localization). Any translations made will be included in the next release.
+- When it is pushed to the original mod, then we pull the changes to this fork and release it a ahort time later
 
 -----
 
-- Suggestions welcome for an extra ingredient to add to the space science -> fish recipe
+Other mods EmperorKermit and I made:
+- [Über Drill](https://mods.factorio.com/mod/UberDrill/) This mod adds a mining drill that can be placed anywhere for infinite resources, however it needs a very strong acid to mine this deep and it will require coolant if Space Exploration is present. 
+
+Other mods the original mod author (Xorimuth) made:
 - Check out my other mods: [Spidertron Waypoints](https://mods.factorio.com/mod/SpidertronWaypoints) and [Spidertron Weapon Switcher](https://mods.factorio.com/mod/SpidertronWeaponSwitcher)
